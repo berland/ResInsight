@@ -96,6 +96,8 @@ public:
     void addFilePath( const QString& filePath );
     void loadAndUpdateData();
 
+    std::vector<cvf::ref<RigStimPlanFractureDefinition>> readFractureDefinitions() const;
+
 protected:
     void defineEditorAttribute( const caf::PdmFieldHandle* field,
                                 QString                    uiConfigName,
